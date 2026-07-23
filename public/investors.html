@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investors | SriKrishna Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-3.1.1.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { dark: '#1a1a2e', light: '#fcfbf7', ink: '#0f172a', gold: '#C9A96E', hairline: '#e2e8f0' } },
+                    fontFamily: { sans: ['Inter','sans-serif'], display: ['"Playfair Display"','serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .link-underline::after { content:''; position:absolute; bottom:0; left:0; width:100%; height:1px; background-color:currentColor; transform:scaleX(0); transform-origin:left; transition:transform 0.6s cubic-bezier(0.19,1,0.22,1); }
+        .link-underline:hover::after { transform:scaleX(1); }
+        .doc-card:hover { border-color: #C9A96E; }
+    </style>
+</head>
+<body class="antialiased font-sans bg-white text-brand-dark overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header id="header" class="fixed top-0 left-0 w-full z-[100] px-6 py-4 flex justify-between items-center bg-white/90 backdrop-blur-md border-b border-brand-hairline">
+        <div class="flex items-center gap-12">
+            <a href="home.html" class="font-display text-2xl font-bold tracking-tight text-brand-dark">SRIKRISHNA</a>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="properties.html" class="relative link-underline text-sm font-medium">Properties</a>
+                <a href="developments.html" class="relative link-underline text-sm font-medium">Developments</a>
+                <a href="about.html" class="relative link-underline text-sm font-medium">About</a>
+                <a href="sustainability.html" class="relative link-underline text-sm font-medium">Sustainability</a>
+                <a href="investors.html" class="relative text-sm font-medium text-brand-gold border-b border-brand-gold pb-0.5">Investors</a>
+                <a href="contact.html" class="relative link-underline text-sm font-medium">Contact</a>
+            </nav>
+        </div>
+        <a href="contact.html" class="bg-brand-gold text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-brand-dark transition-colors duration-300">Enquire Now</a>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="inv-hero" class="relative h-[460px] flex items-end overflow-hidden bg-brand-ink">
+            <img class="absolute inset-0 w-full h-full object-cover opacity-40" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_ca78fe021d_9a5de9b86ee90fd9.png" alt="Mumbai stock exchange building exterior at dawn, finance district, corporate architecture, cinematic" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-ink to-transparent"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 pb-16 w-full">
+                <span class="text-xs tracking-[0.4em] uppercase text-brand-gold mb-3 block">Investor Relations · SriKrishna Real Estate Ltd.</span>
+                <h1 class="font-display text-6xl font-bold text-white leading-tight">Investor<br>Relations</h1>
+            </div>
+        </section>
+
+        <!-- Stock Ticker Band -->
+        <section id="inv-ticker" class="bg-brand-gold py-5">
+            <div class="max-w-7xl mx-auto px-6 flex flex-wrap gap-10 items-center justify-between text-white">
+                <div class="flex items-center gap-4">
+                    <span class="text-xs tracking-widest uppercase font-bold opacity-80">SriKrishna Realty</span>
+                    <span class="font-display text-3xl font-bold">₹1,248.50</span>
+                    <span class="flex items-center gap-1 text-sm font-medium bg-white/20 px-3 py-1 rounded-full"><i class="fa-solid fa-arrow-trend-up text-xs"></i> +2.34% Today</span>
+                </div>
+                <div class="flex gap-10 text-sm opacity-90">
+                    <div><p class="text-xs opacity-70 uppercase tracking-wider mb-1">Market Cap</p><p class="font-bold">₹1,18,500 Cr</p></div>
+                    <div><p class="text-xs opacity-70 uppercase tracking-wider mb-1">52W High</p><p class="font-bold">₹1,490.00</p></div>
+                    <div><p class="text-xs opacity-70 uppercase tracking-wider mb-1">52W Low</p><p class="font-bold">₹980.25</p></div>
+                    <div><p class="text-xs opacity-70 uppercase tracking-wider mb-1">P/E Ratio</p><p class="font-bold">42.6x</p></div>
+                </div>
+                <p class="text-xs opacity-60">Data as of market close. For reference only.</p>
+            </div>
+        </section>
+
+        <!-- Financial Highlights -->
+        <section id="inv-financials" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">FY 2024–25</span>
+                    <h2 class="font-display text-5xl font-bold text-brand-dark">Financial Highlights</h2>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
+                    <div class="border border-brand-hairline p-8 rounded-sm text-center hover:shadow-lg transition-shadow">
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-3">Revenue</p>
+                        <p class="font-display text-4xl font-bold text-brand-dark mb-1">₹13,200 Cr</p>
+                        <p class="text-green-600 text-sm font-medium"><i class="fa-solid fa-arrow-trend-up text-xs mr-1"></i>+22% YoY</p>
+                    </div>
+                    <div class="border border-brand-hairline p-8 rounded-sm text-center hover:shadow-lg transition-shadow">
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-3">Pre-sales</p>
+                        <p class="font-display text-4xl font-bold text-brand-dark mb-1">₹17,500 Cr</p>
+                        <p class="text-green-600 text-sm font-medium"><i class="fa-solid fa-arrow-trend-up text-xs mr-1"></i>+28% YoY</p>
+                    </div>
+                    <div class="border border-brand-hairline p-8 rounded-sm text-center hover:shadow-lg transition-shadow">
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-3">EBITDA</p>
+                        <p class="font-display text-4xl font-bold text-brand-dark mb-1">₹4,100 Cr</p>
+                        <p class="text-green-600 text-sm font-medium"><i class="fa-solid fa-arrow-trend-up text-xs mr-1"></i>+18% YoY</p>
+                    </div>
+                    <div class="border border-brand-hairline p-8 rounded-sm text-center hover:shadow-lg transition-shadow">
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-3">Net Debt</p>
+                        <p class="font-display text-4xl font-bold text-brand-dark mb-1">₹3,800 Cr</p>
+                        <p class="text-red-500 text-sm font-medium"><i class="fa-solid fa-arrow-trend-down text-xs mr-1"></i>−12% YoY</p>
+                    </div>
+                </div>
+
+                <!-- Charts Row -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="border border-brand-hairline rounded-sm p-6">
+                        <h3 class="font-display text-xl font-bold mb-1">Pre-sales Growth (₹ Cr)</h3>
+                        <p class="text-xs text-gray-400 mb-4">FY 2021 – FY 2025</p>
+                        <div id="chart-presales" style="height:300px;"></div>
+                    </div>
+                    <div class="border border-brand-hairline rounded-sm p-6">
+                        <h3 class="font-display text-xl font-bold mb-1">Revenue Breakdown</h3>
+                        <p class="text-xs text-gray-400 mb-4">FY 2024–25 by Segment</p>
+                        <div id="chart-revenue" style="height:300px;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESG / Credit Ratings -->
+        <section id="inv-ratings" class="py-20 bg-brand-light border-y border-brand-hairline">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">Ratings & Governance</span>
+                        <h2 class="font-display text-4xl font-bold text-brand-dark mb-6">Strong Fundamentals</h2>
+                        <p class="text-gray-600 leading-relaxed mb-8">SriKrishna is committed to best-in-class corporate governance, transparent reporting, and maintaining strong credit ratings. Our ESG performance is rated by global agencies and we publish an annual Sustainability Report aligned with GRI standards.</p>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center py-4 border-b border-brand-hairline">
+                                <span class="text-sm font-medium">CRISIL Credit Rating</span>
+                                <span class="font-bold text-brand-gold text-lg">AA / Stable</span>
+                            </div>
+                            <div class="flex justify-between items-center py-4 border-b border-brand-hairline">
+                                <span class="text-sm font-medium">MSCI ESG Rating</span>
+                                <span class="font-bold text-brand-gold text-lg">BBB</span>
+                            </div>
+                            <div class="flex justify-between items-center py-4 border-b border-brand-hairline">
+                                <span class="text-sm font-medium">Sustainalytics Risk Score</span>
+                                <span class="font-bold text-green-600 text-lg">Low Risk · 18.4</span>
+                            </div>
+                            <div class="flex justify-between items-center py-4">
+                                <span class="text-sm font-medium">CDP Climate Score</span>
+                                <span class="font-bold text-brand-gold text-lg">B</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-white border border-brand-hairline p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
+                            <i class="fa-solid fa-shield-halved text-3xl text-brand-gold mb-4"></i>
+                            <p class="font-bold text-brand-dark mb-1">Board Independence</p>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">60% Independent Directors</p>
+                        </div>
+                        <div class="bg-white border border-brand-hairline p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
+                            <i class="fa-solid fa-chart-line text-3xl text-brand-gold mb-4"></i>
+                            <p class="font-bold text-brand-dark mb-1">Dividend Policy</p>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">25% of PAT annually</p>
+                        </div>
+                        <div class="bg-white border border-brand-hairline p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
+                            <i class="fa-solid fa-file-contract text-3xl text-brand-gold mb-4"></i>
+                            <p class="font-bold text-brand-dark mb-1">Auditor</p>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">Deloitte Haskins & Sells</p>
+                        </div>
+                        <div class="bg-white border border-brand-hairline p-6 rounded-sm text-center hover:shadow-lg transition-shadow">
+                            <i class="fa-solid fa-calendar-check text-3xl text-brand-gold mb-4"></i>
+                            <p class="font-bold text-brand-dark mb-1">AGM Date</p>
+                            <p class="text-xs text-gray-400 uppercase tracking-wider">September 12, 2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documents -->
+        <section id="inv-documents" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">Resources</span>
+                    <h2 class="font-display text-5xl font-bold text-brand-dark">Reports & Filings</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="#" class="doc-card flex items-center gap-5 p-6 border border-brand-hairline rounded-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold transition-colors duration-300">
+                            <i class="fa-solid fa-file-pdf text-red-500 text-xl group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-dark text-sm">Annual Report FY 2024–25</p>
+                            <p class="text-xs text-gray-400 mt-0.5">PDF · 8.2 MB · June 2025</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-down ml-auto text-gray-300 group-hover:text-brand-gold transition-colors"></i>
+                    </a>
+                    <a href="#" class="doc-card flex items-center gap-5 p-6 border border-brand-hairline rounded-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold transition-colors duration-300">
+                            <i class="fa-solid fa-file-lines text-blue-500 text-xl group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-dark text-sm">Q4 FY25 Earnings Presentation</p>
+                            <p class="text-xs text-gray-400 mt-0.5">PDF · 3.1 MB · May 2025</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-down ml-auto text-gray-300 group-hover:text-brand-gold transition-colors"></i>
+                    </a>
+                    <a href="#" class="doc-card flex items-center gap-5 p-6 border border-brand-hairline rounded-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold transition-colors duration-300">
+                            <i class="fa-solid fa-leaf text-green-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-dark text-sm">ESG / Sustainability Report 2025</p>
+                            <p class="text-xs text-gray-400 mt-0.5">PDF · 5.6 MB · July 2025</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-down ml-auto text-gray-300 group-hover:text-brand-gold transition-colors"></i>
+                    </a>
+                    <a href="#" class="doc-card flex items-center gap-5 p-6 border border-brand-hairline rounded-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-yellow-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold transition-colors duration-300">
+                            <i class="fa-solid fa-file-invoice-dollar text-yellow-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-dark text-sm">Q3 FY25 Results</p>
+                            <p class="text-xs text-gray-400 mt-0.5">PDF · 2.4 MB · February 2025</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-down ml-auto text-gray-300 group-hover:text-brand-gold transition-colors"></i>
+                    </a>
+                    <a href="#" class="doc-card flex items-center gap-5 p-6 border border-brand-hairline rounded-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold transition-colors duration-300">
+                            <i class="fa-solid fa-building-columns text-purple-600 text-xl group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-dark text-sm">Corporate Governance Report</p>
+                            <p class="text-xs text-gray-400 mt-0.5">PDF · 1.8 MB · June 2025</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-down ml-auto text-gray-300 group-hover:text-brand-gold transition-colors"></i>
+                    </a>
+                    <a href="#" class="doc-card flex items-center gap-5 p-6 border border-brand-hairline rounded-sm hover:shadow-lg transition-all duration-300 group">
+                        <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-gold transition-colors duration-300">
+                            <i class="fa-solid fa-newspaper text-orange-500 text-xl group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-brand-dark text-sm">BSE / NSE Filings & Disclosures</p>
+                            <p class="text-xs text-gray-400 mt-0.5">Updated regularly</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square ml-auto text-gray-300 group-hover:text-brand-gold transition-colors"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact IR Team -->
+        <section id="inv-contact" class="py-20 bg-brand-ink text-white">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <span class="text-xs tracking-[0.4em] uppercase text-brand-gold mb-4 block">Investor Relations</span>
+                <h2 class="font-display text-5xl font-bold mb-6">Talk to Our IR Team</h2>
+                <p class="text-gray-400 text-lg mb-10">For institutional queries, analyst briefings, or shareholder support, our dedicated Investor Relations team is ready to assist.</p>
+                <div class="flex flex-col md:flex-row gap-6 justify-center">
+                    <a href="contact.html" class="inline-flex items-center gap-3 bg-brand-gold text-white px-10 py-4 rounded-full font-medium hover:bg-white hover:text-brand-dark transition-all duration-300">Schedule a Call <i class="fa-solid fa-phone text-sm"></i></a>
+                    <a href="mailto:ir@lodhagroup.com" class="inline-flex items-center gap-3 border border-white/20 text-white px-10 py-4 rounded-full font-medium hover:bg-white hover:text-brand-dark transition-all duration-300">ir@lodhagroup.com <i class="fa-solid fa-envelope text-sm"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-brand-dark text-white pt-20 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-12">
+                <div class="md:w-1/3">
+                    <a href="home.html" class="font-display text-3xl font-bold tracking-tight block mb-6">SRIKRISHNA</a>
+                    <p class="text-gray-400 max-w-sm">Creating iconic spaces that inspire generations. A legacy of excellence since 1980.</p>
+                </div>
+                <div class="flex gap-16 flex-wrap">
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="properties.html" class="text-gray-400 hover:text-white transition-colors text-sm">Properties</a></li>
+                            <li><a href="developments.html" class="text-gray-400 hover:text-white transition-colors text-sm">Developments</a></li>
+                            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+                            <li><a href="investors.html" class="text-gray-400 hover:text-white transition-colors text-sm">Investors</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Terms of Use</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Disclosures</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 gap-4">
+                <p class="text-gray-500 text-sm">© 2026 SriKrishna Real Estate. All rights reserved. Stock data is indicative only.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('load', function() {
+            try {
+                Plotly.newPlot('chart-presales', [{
+                    type: 'bar',
+                    x: ['FY21','FY22','FY23','FY24','FY25'],
+                    y: [7200, 9100, 11400, 13700, 17500],
+                    marker: { color: ['#C9A96E','#C9A96E','#C9A96E','#C9A96E','#1a1a2e'] },
+                    hovertemplate: '₹%{y:,} Cr<extra></extra>'
+                }], {
+                    margin: { t: 10, r: 10, b: 40, l: 60 },
+                    plot_bgcolor: '#ffffff',
+                    paper_bgcolor: '#ffffff',
+                    xaxis: { showgrid: false },
+                    yaxis: { showgrid: true, gridcolor: '#f1f5f9', tickprefix: '₹', ticksuffix: ' Cr' },
+                    font: { family: 'Inter, sans-serif', size: 12 }
+                }, { responsive: true, displayModeBar: false });
+            } catch(e) { document.getElementById('chart-presales').innerHTML = '<p class="text-gray-400 text-sm p-4">Chart unavailable</p>'; }
+
+            try {
+                Plotly.newPlot('chart-revenue', [{
+                    type: 'pie',
+                    labels: ['Mumbai MMR', 'Pune', 'Hyderabad', 'Bengaluru', 'International'],
+                    values: [58, 16, 10, 9, 7],
+                    marker: { colors: ['#1a1a2e','#C9A96E','#4a5568','#718096','#a0aec0'] },
+                    hovertemplate: '%{label}: %{value}%<extra></extra>',
+                    hole: 0.4,
+                    textinfo: 'percent',
+                    textfont: { color: '#fff', size: 12 }
+                }], {
+                    margin: { t: 10, r: 80, b: 10, l: 10 },
+                    plot_bgcolor: '#ffffff',
+                    paper_bgcolor: '#ffffff',
+                    showlegend: true,
+                    legend: { orientation: 'v', x: 0.75, y: 0.5, font: { size: 11 } },
+                    font: { family: 'Inter, sans-serif' }
+                }, { responsive: true, displayModeBar: false });
+            } catch(e) { document.getElementById('chart-revenue').innerHTML = '<p class="text-gray-400 text-sm p-4">Chart unavailable</p>'; }
+        });
+    </script>
+</body>
+</html>

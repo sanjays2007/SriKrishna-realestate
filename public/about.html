@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SriKrishna Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { dark: '#1a1a2e', light: '#fcfbf7', ink: '#0f172a', gold: '#C9A96E', hairline: '#e2e8f0' } },
+                    fontFamily: { sans: ['Inter','sans-serif'], display: ['"Playfair Display"','serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .link-underline::after { content:''; position:absolute; bottom:0; left:0; width:100%; height:1px; background-color:currentColor; transform:scaleX(0); transform-origin:left; transition:transform 0.6s cubic-bezier(0.19,1,0.22,1); }
+        .link-underline:hover::after { transform:scaleX(1); }
+        .timeline-dot { width:14px; height:14px; border-radius:50%; background:#C9A96E; flex-shrink:0; margin-top:4px; }
+    </style>
+</head>
+<body class="antialiased font-sans bg-white text-brand-dark overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header id="header" class="fixed top-0 left-0 w-full z-[100] px-6 py-4 flex justify-between items-center bg-white/90 backdrop-blur-md border-b border-brand-hairline">
+        <div class="flex items-center gap-12">
+            <a href="home.html" class="font-display text-2xl font-bold tracking-tight text-brand-dark">SRIKRISHNA</a>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="properties.html" class="relative link-underline text-sm font-medium">Properties</a>
+                <a href="developments.html" class="relative link-underline text-sm font-medium">Developments</a>
+                <a href="about.html" class="relative text-sm font-medium text-brand-gold border-b border-brand-gold pb-0.5">About</a>
+                <a href="sustainability.html" class="relative link-underline text-sm font-medium">Sustainability</a>
+                <a href="investors.html" class="relative link-underline text-sm font-medium">Investors</a>
+                <a href="contact.html" class="relative link-underline text-sm font-medium">Contact</a>
+            </nav>
+        </div>
+        <a href="contact.html" class="bg-brand-gold text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-brand-dark transition-colors duration-300">Enquire Now</a>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="about-hero" class="relative h-[520px] flex items-end overflow-hidden">
+            <img class="absolute inset-0 w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_ddb96c7dd3_6875aa90333dbfab.png" alt="elegant portrait of a luxury real estate headquarters building with glass facade and manicured groun" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/50 to-transparent"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 pb-16 w-full">
+                <span class="text-xs tracking-[0.4em] uppercase text-brand-gold mb-3 block">Our Story</span>
+                <h1 class="font-display text-6xl font-bold text-white leading-tight">About<br>SriKrishna Real Estate</h1>
+            </div>
+        </section>
+
+        <!-- Mission Statement -->
+        <section id="about-mission" class="py-24 bg-brand-light border-b border-brand-hairline">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-6 block">Our Purpose</span>
+                <h2 class="font-display text-5xl font-bold text-brand-dark mb-8 leading-tight">"We are dedicated to creating <em class="text-brand-gold not-italic">landmarks</em> that inspire generations."</h2>
+                <p class="text-gray-600 text-lg leading-relaxed">Founded in 1980, SriKrishna Real Estate has grown from a single residential project into one of the region's most trusted real estate developers. Our journey is one of unwavering commitment — to quality, to community, and to creating spaces that stand the test of time.</p>
+            </div>
+        </section>
+
+        <!-- Story with Image -->
+        <section id="about-story" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <div>
+                    <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">The SriKrishna Legacy</span>
+                    <h2 class="font-display text-4xl font-bold text-brand-dark mb-6">From One Dream to a Thousand Skylines</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">What began as a vision to bring well-built, honestly-priced homes to families has evolved into a real estate business trusted across the region. Under a leadership team dedicated to quality and transparency, we have delivered millions of square feet of premium residential and commercial real estate.</p>
+                    <p class="text-gray-600 leading-relaxed mb-6">Today, SriKrishna Real Estate operates across multiple cities — with each development setting new benchmarks for design, construction quality, and sustainable living.</p>
+                    <p class="text-gray-600 leading-relaxed">We believe every home should be a source of pride and every development a contribution to the community it belongs to.</p>
+                </div>
+                <div class="relative">
+                    <img class="w-full rounded-sm shadow-2xl aspect-[4/5] object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_96846f27d4_51c2307f5bd7e2fb.png" alt="interior of a premium sales gallery with scale model of luxury towers, marble floors, elegant lighti" />
+                    <div class="absolute -bottom-8 -left-8 bg-brand-gold text-white p-8 rounded-sm w-48">
+                        <p class="font-display text-4xl font-bold">1980</p>
+                        <p class="text-xs tracking-widest uppercase mt-1 opacity-80">Year Founded</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section id="about-stats" class="py-20 bg-brand-ink text-white">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+                <div>
+                    <p class="font-display text-6xl font-bold text-brand-gold mb-3">40+</p>
+                    <p class="text-xs tracking-widest uppercase opacity-70">Years of Excellence</p>
+                </div>
+                <div>
+                    <p class="font-display text-6xl font-bold text-brand-gold mb-3">85M+</p>
+                    <p class="text-xs tracking-widest uppercase opacity-70">Sq Ft Delivered</p>
+                </div>
+                <div>
+                    <p class="font-display text-6xl font-bold text-brand-gold mb-3">100K+</p>
+                    <p class="text-xs tracking-widest uppercase opacity-70">Families Housed</p>
+                </div>
+                <div>
+                    <p class="font-display text-6xl font-bold text-brand-gold mb-3">10+</p>
+                    <p class="text-xs tracking-widest uppercase opacity-70">Cities & Countries</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline -->
+        <section id="about-timeline" class="py-24 bg-brand-light">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">Our Journey</span>
+                    <h2 class="font-display text-5xl font-bold text-brand-dark">Milestones</h2>
+                </div>
+                <div class="space-y-12">
+                    <div class="flex gap-8">
+                        <div class="flex flex-col items-center">
+                            <div class="timeline-dot"></div>
+                            <div class="flex-1 w-0.5 bg-brand-hairline mt-2"></div>
+                        </div>
+                        <div class="pb-12">
+                            <p class="text-brand-gold font-bold text-sm tracking-widest uppercase mb-1">1980</p>
+                            <h3 class="font-display text-2xl font-bold mb-2">SriKrishna Real Estate Founded</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Our founders establish the company with a single residential project, setting the foundation for a legacy built on trust and craftsmanship.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8">
+                        <div class="flex flex-col items-center">
+                            <div class="timeline-dot"></div>
+                            <div class="flex-1 w-0.5 bg-brand-hairline mt-2"></div>
+                        </div>
+                        <div class="pb-12">
+                            <p class="text-brand-gold font-bold text-sm tracking-widest uppercase mb-1">2000</p>
+                            <h3 class="font-display text-2xl font-bold mb-2">First Township Launched</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Launch of our first planned township community — a transformative vision for integrated urban living that set the template for future developments.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8">
+                        <div class="flex flex-col items-center">
+                            <div class="timeline-dot"></div>
+                            <div class="flex-1 w-0.5 bg-brand-hairline mt-2"></div>
+                        </div>
+                        <div class="pb-12">
+                            <p class="text-brand-gold font-bold text-sm tracking-widest uppercase mb-1">2010</p>
+                            <h3 class="font-display text-2xl font-bold mb-2">Flagship Tower Announced</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">SriKrishna announces its flagship residential tower — cementing its status as a developer of landmark, ambitious projects.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8">
+                        <div class="flex flex-col items-center">
+                            <div class="timeline-dot"></div>
+                            <div class="flex-1 w-0.5 bg-brand-hairline mt-2"></div>
+                        </div>
+                        <div class="pb-12">
+                            <p class="text-brand-gold font-bold text-sm tracking-widest uppercase mb-1">2014</p>
+                            <h3 class="font-display text-2xl font-bold mb-2">Regional Expansion</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">SriKrishna expands into new cities, marking its growth into a multi-city developer with a diversified portfolio.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-8">
+                        <div class="flex flex-col items-center">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div>
+                            <p class="text-brand-gold font-bold text-sm tracking-widest uppercase mb-1">2021</p>
+                            <h3 class="font-display text-2xl font-bold mb-2">1,000+ Families Housed</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">SriKrishna crosses the milestone of housing over a thousand families across its residential communities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership -->
+        <section id="about-leadership" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">The People Behind the Vision</span>
+                    <h2 class="font-display text-5xl font-bold text-brand-dark">Leadership</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="text-center group">
+                        <div class="relative overflow-hidden rounded-sm mb-6 h-80">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_3b766e58f1_751df6bc938c8512.png" alt="professional portrait of a senior Indian business executive in formal attire, neutral studio backgro" />
+                        </div>
+                        <h3 class="font-display text-2xl font-bold mb-1">Krishnan Iyer</h3>
+                        <p class="text-brand-gold text-sm tracking-widest uppercase mb-3">Founder & Chairman</p>
+                        <p class="text-gray-500 text-sm leading-relaxed">Visionary founder who built SriKrishna's reputation on quality construction and community-first development.</p>
+                    </div>
+                    <div class="text-center group">
+                        <div class="relative overflow-hidden rounded-sm mb-6 h-80">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_8c9849884d_1035b521562d2d12.png" alt="professional portrait of a young Indian business leader in smart business attire, modern office back" />
+                        </div>
+                        <h3 class="font-display text-2xl font-bold mb-1">Ramesh Iyer</h3>
+                        <p class="text-brand-gold text-sm tracking-widest uppercase mb-3">Managing Director & CEO</p>
+                        <p class="text-gray-500 text-sm leading-relaxed">Leading SriKrishna's regional expansion with a focus on innovation and sustainable growth.</p>
+                    </div>
+                    <div class="text-center group">
+                        <div class="relative overflow-hidden rounded-sm mb-6 h-80">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_8c9849884d_3c1a72263b826c52.png" alt="professional portrait of a young Indian entrepreneur in elegant business wear, premium office settin" />
+                        </div>
+                        <h3 class="font-display text-2xl font-bold mb-1">Priya Krishnan</h3>
+                        <p class="text-brand-gold text-sm tracking-widest uppercase mb-3">Chief Operating Officer</p>
+                        <p class="text-gray-500 text-sm leading-relaxed">Overseeing project delivery and operations, ensuring every SriKrishna development meets its promise.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards -->
+        <section id="about-awards" class="py-20 bg-brand-light border-t border-brand-hairline">
+            <div class="max-w-7xl mx-auto px-6 text-center mb-12">
+                <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">Recognition</span>
+                <h2 class="font-display text-4xl font-bold text-brand-dark">Awards & Accolades</h2>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-sm border border-brand-hairline text-center hover:shadow-lg transition-shadow">
+                    <i class="fa-solid fa-trophy text-3xl text-brand-gold mb-4"></i>
+                    <p class="font-bold text-brand-dark mb-1">Best Developer 2023</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-wider">JLL Awards</p>
+                </div>
+                <div class="bg-white p-8 rounded-sm border border-brand-hairline text-center hover:shadow-lg transition-shadow">
+                    <i class="fa-solid fa-medal text-3xl text-brand-gold mb-4"></i>
+                    <p class="font-bold text-brand-dark mb-1">CREDAI National Award</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-wider">Excellence in Real Estate</p>
+                </div>
+                <div class="bg-white p-8 rounded-sm border border-brand-hairline text-center hover:shadow-lg transition-shadow">
+                    <i class="fa-solid fa-star text-3xl text-brand-gold mb-4"></i>
+                    <p class="font-bold text-brand-dark mb-1">IGBC Platinum Rating</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-wider">Green Building Council</p>
+                </div>
+                <div class="bg-white p-8 rounded-sm border border-brand-hairline text-center hover:shadow-lg transition-shadow">
+                    <i class="fa-solid fa-award text-3xl text-brand-gold mb-4"></i>
+                    <p class="font-bold text-brand-dark mb-1">ET Best Brands 2022</p>
+                    <p class="text-xs text-gray-400 uppercase tracking-wider">Economic Times</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-brand-dark text-white pt-20 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-12">
+                <div class="md:w-1/3">
+                    <a href="home.html" class="font-display text-3xl font-bold tracking-tight block mb-6">SRIKRISHNA</a>
+                    <p class="text-gray-400 max-w-sm">Creating iconic spaces that inspire generations. A legacy of excellence since 1980.</p>
+                </div>
+                <div class="flex gap-16 flex-wrap">
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="properties.html" class="text-gray-400 hover:text-white transition-colors text-sm">Properties</a></li>
+                            <li><a href="developments.html" class="text-gray-400 hover:text-white transition-colors text-sm">Developments</a></li>
+                            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+                            <li><a href="sustainability.html" class="text-gray-400 hover:text-white transition-colors text-sm">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Instagram</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Facebook</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 gap-4">
+                <p class="text-gray-500 text-sm">© 2026 SriKrishna Real Estate. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

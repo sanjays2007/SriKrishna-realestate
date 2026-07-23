@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developments | SriKrishna Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { dark: '#1a1a2e', light: '#fcfbf7', ink: '#0f172a', gold: '#C9A96E', hairline: '#e2e8f0' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .link-underline::after { content:''; position:absolute; bottom:0; left:0; width:100%; height:1px; background-color:currentColor; transform:scaleX(0); transform-origin:left; transition:transform 0.6s cubic-bezier(0.19,1,0.22,1); }
+        .link-underline:hover::after { transform:scaleX(1); }
+        .tab-btn.active { color:#C9A96E; border-bottom: 2px solid #C9A96E; }
+    </style>
+</head>
+<body class="antialiased font-sans bg-white text-brand-dark overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header id="header" class="fixed top-0 left-0 w-full z-[100] px-6 py-4 flex justify-between items-center bg-white/90 backdrop-blur-md border-b border-brand-hairline">
+        <div class="flex items-center gap-12">
+            <a href="home.html" class="font-display text-2xl font-bold tracking-tight text-brand-dark">SRIKRISHNA</a>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="properties.html" class="relative link-underline text-sm font-medium">Properties</a>
+                <a href="developments.html" class="relative text-sm font-medium text-brand-gold border-b border-brand-gold pb-0.5">Developments</a>
+                <a href="about.html" class="relative link-underline text-sm font-medium">About</a>
+                <a href="sustainability.html" class="relative link-underline text-sm font-medium">Sustainability</a>
+                <a href="investors.html" class="relative link-underline text-sm font-medium">Investors</a>
+                <a href="contact.html" class="relative link-underline text-sm font-medium">Contact</a>
+            </nav>
+        </div>
+        <a href="contact.html" class="bg-brand-gold text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-brand-dark transition-colors duration-300">Enquire Now</a>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="dev-hero" class="relative h-[500px] flex items-end overflow-hidden">
+            <img class="absolute inset-0 w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_b8ce0e2e20_c5c0be1a09e97106.png" alt="sweeping aerial view of a large scale luxury township development with towers, parks, and roads, Ind" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/40 to-transparent"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 pb-16 w-full">
+                <span class="text-xs tracking-[0.4em] uppercase text-brand-gold mb-3 block">Landmark Projects</span>
+                <h1 class="font-display text-6xl font-bold text-white leading-tight">Our<br>Developments</h1>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section id="dev-intro" class="py-20 bg-brand-light border-b border-brand-hairline">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/2">
+                    <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">40+ Years of Vision</span>
+                    <h2 class="font-display text-5xl font-bold text-brand-dark mb-6">Shaping Skylines.<br>Building Legacies.</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">From India's tallest residential tower to award-winning township cities, SriKrishna's developments are benchmarks of ambition and craft — each one redefining what urban living can be.</p>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-6">
+                    <div class="bg-white p-8 rounded-sm border border-brand-hairline text-center">
+                        <p class="font-display text-5xl font-bold text-brand-gold mb-2">85+</p>
+                        <p class="text-xs tracking-widest uppercase text-gray-400">Projects Delivered</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm border border-brand-hairline text-center">
+                        <p class="font-display text-5xl font-bold text-brand-gold mb-2">50M+</p>
+                        <p class="text-xs tracking-widest uppercase text-gray-400">Sq Ft Completed</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm border border-brand-hairline text-center">
+                        <p class="font-display text-5xl font-bold text-brand-gold mb-2">10</p>
+                        <p class="text-xs tracking-widest uppercase text-gray-400">Cities Across India</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm border border-brand-hairline text-center">
+                        <p class="font-display text-5xl font-bold text-brand-gold mb-2">100K+</p>
+                        <p class="text-xs tracking-widest uppercase text-gray-400">Families Housed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tabs -->
+        <section id="dev-tabs" class="sticky top-[72px] z-50 bg-white border-b border-brand-hairline">
+            <div class="max-w-7xl mx-auto px-6 flex gap-8">
+                <button onclick="switchTab(this,'flagship')" class="tab-btn active py-5 text-sm font-medium tracking-wide transition-all duration-200">Flagship Projects</button>
+                <button onclick="switchTab(this,'townships')" class="tab-btn py-5 text-sm font-medium tracking-wide text-gray-400 hover:text-brand-dark transition-all duration-200">Townships</button>
+                <button onclick="switchTab(this,'international')" class="tab-btn py-5 text-sm font-medium tracking-wide text-gray-400 hover:text-brand-dark transition-all duration-200">International</button>
+            </div>
+        </section>
+
+        <!-- Flagship Projects -->
+        <section id="tab-flagship" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 space-y-24">
+
+                <!-- Dev 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="relative overflow-hidden rounded-sm aspect-[4/3] group">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_06f952597b_f12fe47ce8adc10c.png" alt="World One skyscraper tallest residential tower Mumbai Worli, glass facade soaring into clouds, archi" />
+                        <div class="absolute top-6 left-6"><span class="bg-brand-gold text-white text-xs px-4 py-1.5 rounded-full tracking-widest uppercase">Ongoing</span></div>
+                    </div>
+                    <div>
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-3">Mumbai · Worli</p>
+                        <h3 class="font-display text-4xl font-bold mb-4">World One</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">Standing 442 metres tall, World One is the world's tallest residential tower. This architectural marvel offers 283 ultra-luxury residences across 117 floors with unobstructed panoramic views of the city and the Arabian Sea.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> 117 floors · 283 residences</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> Sky lounges every 20 floors</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> 5-star concierge services</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> Starting from ₹15 Cr</li>
+                        </ul>
+                        <a href="properties.html" class="inline-flex items-center gap-3 bg-brand-dark text-white px-8 py-3.5 rounded-full text-sm font-medium hover:bg-brand-gold transition-all duration-300">Explore World One <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+                <div class="border-t border-brand-hairline"></div>
+
+                <!-- Dev 2 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 md:order-1">
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-3">Mumbai · Worli</p>
+                        <h3 class="font-display text-4xl font-bold mb-4">The Park</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">A collection of ultra-luxury residences surrounding a one-acre private garden in the heart of South Central Mumbai. The Park reimagines the concept of a personal sanctuary within an urban setting.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> 3, 4 & 5 BHK residences</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> 1-acre private landscaped park</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> Designed by Pei Cobb Freed & Partners</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> Starting from ₹8 Cr</li>
+                        </ul>
+                        <a href="properties.html" class="inline-flex items-center gap-3 bg-brand-dark text-white px-8 py-3.5 rounded-full text-sm font-medium hover:bg-brand-gold transition-all duration-300">Explore The Park <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                    <div class="order-1 md:order-2 relative overflow-hidden rounded-sm aspect-[4/3] group">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_5d2eddb28b_47a5c322696be60c.png" alt="luxury residential towers surrounding a lush private park in urban Mumbai, aerial view, editorial ph" />
+                        <div class="absolute top-6 left-6"><span class="bg-green-600 text-white text-xs px-4 py-1.5 rounded-full tracking-widest uppercase">Completed</span></div>
+                    </div>
+                </div>
+
+                <div class="border-t border-brand-hairline"></div>
+
+                <!-- Dev 3 -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div class="relative overflow-hidden rounded-sm aspect-[4/3] group">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_9049a584b2_5692dacd52f54f2b.png" alt="grand luxury residential complex with clubhouse and pools in Thane India, landscaped surroundings, g" />
+                        <div class="absolute top-6 left-6"><span class="bg-brand-gold text-white text-xs px-4 py-1.5 rounded-full tracking-widest uppercase">Ongoing</span></div>
+                    </div>
+                    <div>
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-3">Thane · Majiwada</p>
+                        <h3 class="font-display text-4xl font-bold mb-4">SriKrishna Bellavista</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">A masterplanned community in Thane featuring 5 towers rising above a 3-acre podium garden, with world-class amenities including a 50,000 sq ft clubhouse, tennis courts, and an Olympic-sized pool.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> 5 towers · 1,200+ apartments</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> 50,000 sq ft grand clubhouse</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> Olympic pool & sports courts</li>
+                            <li class="flex items-center gap-3 text-sm text-gray-600"><i class="fa-solid fa-check text-brand-gold"></i> Starting from ₹1.5 Cr</li>
+                        </ul>
+                        <a href="properties.html" class="inline-flex items-center gap-3 bg-brand-dark text-white px-8 py-3.5 rounded-full text-sm font-medium hover:bg-brand-gold transition-all duration-300">Explore Bellavista <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Townships Tab (hidden) -->
+        <section id="tab-townships" class="py-20 bg-white hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-display text-5xl font-bold mb-4">Township Cities</h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto">Self-sufficient smart townships built from the ground up — complete with schools, hospitals, retail, and recreation.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="group cursor-pointer relative overflow-hidden rounded-sm h-[420px]">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_f14ba7ce76_7ba9b0357474031e.png" alt="Palava smart city township aerial view with wide roads, residential towers, and green spaces, Mahara" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-8 left-8 text-white">
+                            <p class="text-xs tracking-widest uppercase text-brand-gold mb-2">Dombivli · Mumbai MMR</p>
+                            <h3 class="font-display text-3xl font-bold mb-2">Palava City</h3>
+                            <p class="text-gray-300 text-sm">4,500 acres · India's #1 planned city</p>
+                        </div>
+                    </div>
+                    <div class="group cursor-pointer relative overflow-hidden rounded-sm h-[420px]">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_5a14245203_58472930decd5090.png" alt="luxury township with lake, walking trails, parks, and residential towers in Hyderabad, aerial photog" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-8 left-8 text-white">
+                            <p class="text-xs tracking-widest uppercase text-brand-gold mb-2">Hyderabad · Shamshabad</p>
+                            <h3 class="font-display text-3xl font-bold mb-2">SriKrishna Meridian City</h3>
+                            <p class="text-gray-300 text-sm">1,200 acres · Integrated township</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- International Tab (hidden) -->
+        <section id="tab-international" class="py-20 bg-white hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-display text-5xl font-bold mb-4">International Developments</h2>
+                    <p class="text-gray-500 max-w-2xl mx-auto">SriKrishna's vision extends beyond India — crafting landmark developments in the world's most prestigious addresses.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-sm h-80 mb-6">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_efa8267f72_bddcbfdf5e281a2d.png" alt="luxury residential development in Mayfair London with classic Georgian architecture, premium real es" />
+                        </div>
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-2">London · Mayfair</p>
+                        <h3 class="font-display text-2xl font-bold mb-2">No. 1 Grosvenor Square</h3>
+                        <p class="text-gray-500 text-sm">Ultra-prime residences in one of London's most coveted addresses.</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-sm h-80 mb-6">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_84552eb91f_e3920b28c1180833.png" alt="luxury new build residential apartments in Lincoln Square Holborn London, modern architecture" />
+                        </div>
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-2">London · Holborn</p>
+                        <h3 class="font-display text-2xl font-bold mb-2">Lincoln Square</h3>
+                        <p class="text-gray-500 text-sm">Contemporary residences at the edge of the City of London.</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-sm h-80 mb-6">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_9c4ba48cb5_685f3eec842a8acf.png" alt="luxury penthouse development overlooking Brentford waterfront London, riverside residences" />
+                        </div>
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-2">London · Brentford</p>
+                        <h3 class="font-display text-2xl font-bold mb-2">SriKrishna Sterling</h3>
+                        <p class="text-gray-500 text-sm">Waterfront residences blending heritage charm with modern luxury.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="dev-cta" class="relative py-28 overflow-hidden">
+            <img class="absolute inset-0 w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_904f4090fe_d1f6eae701683e72.png" alt="luxury apartment building entrance lobby with marble floors and brass accents, premium real estate I" />
+            <div class="absolute inset-0 bg-brand-ink/75"></div>
+            <div class="relative z-10 text-center text-white max-w-3xl mx-auto px-6">
+                <h2 class="font-display text-5xl font-bold mb-6">Find Your Landmark Address</h2>
+                <p class="text-gray-300 text-lg mb-10">From studio apartments to record-setting penthouses, our advisors will guide you home.</p>
+                <a href="contact.html" class="inline-flex items-center gap-3 bg-brand-gold text-white px-12 py-4 rounded-full font-medium hover:bg-white hover:text-brand-dark transition-all duration-300">Talk to an Advisor <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-brand-dark text-white pt-20 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-12">
+                <div class="md:w-1/3">
+                    <a href="home.html" class="font-display text-3xl font-bold tracking-tight block mb-6">SRIKRISHNA</a>
+                    <p class="text-gray-400 max-w-sm">Creating iconic spaces that inspire generations. A legacy of excellence since 1980.</p>
+                </div>
+                <div class="flex gap-16 flex-wrap">
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="properties.html" class="text-gray-400 hover:text-white transition-colors text-sm">Properties</a></li>
+                            <li><a href="developments.html" class="text-gray-400 hover:text-white transition-colors text-sm">Developments</a></li>
+                            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+                            <li><a href="sustainability.html" class="text-gray-400 hover:text-white transition-colors text-sm">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Instagram</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Facebook</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 gap-4">
+                <p class="text-gray-500 text-sm">© 2026 SriKrishna Real Estate. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function switchTab(btn, tab) {
+            document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.classList.add('text-gray-400'); });
+            btn.classList.add('active'); btn.classList.remove('text-gray-400');
+            ['flagship','townships','international'].forEach(t => {
+                document.getElementById('tab-'+t).classList.toggle('hidden', t !== tab);
+            });
+        }
+    </script>
+</body>
+</html>

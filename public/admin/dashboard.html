@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | SriKrishna Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { dark: '#1a1a2e', ink: '#0f172a', gold: '#C9A96E', hairline: '#e2e8f0' } },
+                    fontFamily: { sans: ['Inter','sans-serif'], display: ['"Playfair Display"','serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased font-sans bg-gray-50 text-brand-dark min-h-screen">
+
+    <header class="bg-white border-b border-brand-hairline px-6 py-4 flex justify-between items-center">
+        <a href="../home.html" class="font-display text-xl font-bold tracking-tight">SRIKRISHNA <span class="text-brand-gold text-sm font-sans font-normal">Admin</span></a>
+        <button id="logout-btn" class="text-sm text-gray-500 hover:text-brand-dark">Log out <i class="fa-solid fa-arrow-right-from-bracket ml-1"></i></button>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-10">
+
+        <!-- Tabs -->
+        <div class="flex gap-2 mb-8 border-b border-brand-hairline">
+            <button data-tab="properties" class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-brand-gold text-brand-dark">Properties</button>
+            <button data-tab="inquiries" class="tab-btn px-5 py-3 text-sm font-medium border-b-2 border-transparent text-gray-400 hover:text-brand-dark">Inquiries</button>
+        </div>
+
+        <!-- Properties Tab -->
+        <section id="tab-properties">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="font-display text-2xl font-bold">Property Listings</h2>
+                <button id="add-property-btn" class="bg-brand-gold text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-dark transition-colors">+ Add Property</button>
+            </div>
+            <div class="bg-white rounded-lg shadow-sm border border-brand-hairline overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead class="bg-gray-50 text-gray-500 uppercase text-xs tracking-wider">
+                        <tr>
+                            <th class="text-left px-5 py-3">Title</th>
+                            <th class="text-left px-5 py-3">City</th>
+                            <th class="text-left px-5 py-3">Category</th>
+                            <th class="text-left px-5 py-3">Status</th>
+                            <th class="text-left px-5 py-3">Price</th>
+                            <th class="text-left px-5 py-3">Featured</th>
+                            <th class="text-right px-5 py-3">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="properties-table-body" class="divide-y divide-brand-hairline"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Inquiries Tab -->
+        <section id="tab-inquiries" class="hidden">
+            <h2 class="font-display text-2xl font-bold mb-6">Inquiries</h2>
+            <div class="bg-white rounded-lg shadow-sm border border-brand-hairline overflow-x-auto">
+                <table class="w-full text-sm">
+                    <thead class="bg-gray-50 text-gray-500 uppercase text-xs tracking-wider">
+                        <tr>
+                            <th class="text-left px-5 py-3">Name</th>
+                            <th class="text-left px-5 py-3">Phone</th>
+                            <th class="text-left px-5 py-3">Email</th>
+                            <th class="text-left px-5 py-3">City</th>
+                            <th class="text-left px-5 py-3">Message</th>
+                            <th class="text-left px-5 py-3">Received</th>
+                            <th class="text-left px-5 py-3">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inquiries-table-body" class="divide-y divide-brand-hairline"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Property Add/Edit Modal -->
+    <div id="property-modal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center px-4">
+        <div class="bg-white rounded-lg shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto p-8">
+            <div class="flex justify-between items-center mb-6">
+                <h3 id="modal-title" class="font-display text-xl font-bold">Add Property</h3>
+                <button id="modal-close" class="text-gray-400 hover:text-brand-dark"><i class="fa-solid fa-xmark text-xl"></i></button>
+            </div>
+            <form id="property-form" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input type="hidden" name="id" />
+                <div class="md:col-span-2">
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Title</label>
+                    <input required name="title" type="text" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold" />
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">City</label>
+                    <input required name="city" type="text" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold" />
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Area / Locality</label>
+                    <input required name="area" type="text" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold" />
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Category</label>
+                    <select name="category" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold">
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Status</label>
+                    <select name="status" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold">
+                        <option value="ongoing">Ongoing</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Price Label (e.g. ₹4.5 Cr)</label>
+                    <input required name="price_label" type="text" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold" />
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Spec Label (e.g. 2-3 BHK)</label>
+                    <input required name="spec_label" type="text" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold" />
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Spec Icon (Font Awesome class)</label>
+                    <input name="spec_icon" type="text" placeholder="fa-bed" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold" />
+                </div>
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Area Label (e.g. 1,100 sq ft)</label>
+                    <input required name="area_label" type="text" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold" />
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Image URL</label>
+                    <input required name="image_url" type="text" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold" />
+                </div>
+                <div class="md:col-span-2">
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Description</label>
+                    <textarea required name="description" rows="3" class="w-full border border-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:border-brand-gold"></textarea>
+                </div>
+                <div class="md:col-span-2 flex items-center gap-2">
+                    <input id="featured-checkbox" name="featured" type="checkbox" class="w-4 h-4" />
+                    <label for="featured-checkbox" class="text-sm text-gray-600">Feature this property on the Properties page hero</label>
+                </div>
+                <div class="md:col-span-2 flex justify-end gap-3 pt-4">
+                    <button type="button" id="modal-cancel" class="px-6 py-2.5 rounded-full border border-gray-300 text-sm font-medium hover:bg-gray-50">Cancel</button>
+                    <button type="submit" class="px-6 py-2.5 rounded-full bg-brand-gold text-white text-sm font-medium hover:bg-brand-dark transition-colors">Save Property</button>
+                </div>
+                <p id="modal-error" class="md:col-span-2 text-red-500 text-sm hidden"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

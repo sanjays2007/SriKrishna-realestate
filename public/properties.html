@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties | SriKrishna Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#1a1a2e',
+                            light: '#fcfbf7',
+                            ink: '#0f172a',
+                            gold: '#C9A96E',
+                            hairline: '#e2e8f0',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .link-underline::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 100%; height: 1px;
+            background-color: currentColor;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.6s cubic-bezier(0.19,1,0.22,1);
+        }
+        .link-underline:hover::after { transform: scaleX(1); }
+        .filter-btn.active { background: #C9A96E; color: #fff; border-color: #C9A96E; }
+    </style>
+</head>
+<body class="antialiased font-sans bg-white text-brand-dark overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header id="header" class="fixed top-0 left-0 w-full z-[100] px-6 py-4 flex justify-between items-center bg-white/90 backdrop-blur-md border-b border-brand-hairline">
+        <div class="flex items-center gap-12">
+            <a href="home.html" class="font-display text-2xl font-bold tracking-tight text-brand-dark">SRIKRISHNA</a>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="properties.html" class="relative text-sm font-medium text-brand-gold border-b border-brand-gold pb-0.5">Properties</a>
+                <a href="developments.html" class="relative link-underline text-sm font-medium">Developments</a>
+                <a href="about.html" class="relative link-underline text-sm font-medium">About</a>
+                <a href="sustainability.html" class="relative link-underline text-sm font-medium">Sustainability</a>
+                <a href="investors.html" class="relative link-underline text-sm font-medium">Investors</a>
+                <a href="contact.html" class="relative link-underline text-sm font-medium">Contact</a>
+            </nav>
+        </div>
+        <a href="contact.html" class="bg-brand-gold text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-brand-dark transition-colors duration-300">Enquire Now</a>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section id="properties-hero" class="relative h-[420px] bg-brand-ink flex items-end overflow-hidden">
+            <img class="absolute inset-0 w-full h-full object-cover opacity-60" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_a23e396e30_4f019903554d5a0a.png" alt="aerial cinematic view of premium luxury residential towers in a modern Indian city, golden hour, edi" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/50 to-transparent"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 pb-16 w-full">
+                <span class="text-xs tracking-[0.4em] uppercase text-brand-gold mb-3 block">Our Portfolio</span>
+                <h1 class="font-display text-6xl font-bold text-white">Properties</h1>
+            </div>
+        </section>
+
+        <!-- Filter Bar -->
+        <section id="filter-bar" class="sticky top-[72px] z-50 bg-white border-b border-brand-hairline py-5 shadow-sm">
+            <div class="max-w-7xl mx-auto px-6 flex flex-wrap gap-3 items-center justify-between">
+                <div class="flex flex-wrap gap-3" id="category-filters">
+                    <button data-cat="all" class="filter-btn active px-5 py-2 rounded-full border border-brand-hairline text-sm font-medium transition-all duration-200">All</button>
+                    <button data-cat="residential" class="filter-btn px-5 py-2 rounded-full border border-brand-hairline text-sm font-medium transition-all duration-200 hover:border-brand-gold">Residential</button>
+                    <button data-cat="commercial" class="filter-btn px-5 py-2 rounded-full border border-brand-hairline text-sm font-medium transition-all duration-200 hover:border-brand-gold">Commercial</button>
+                    <button data-cat="ongoing" class="filter-btn px-5 py-2 rounded-full border border-brand-hairline text-sm font-medium transition-all duration-200 hover:border-brand-gold">Ongoing</button>
+                    <button data-cat="completed" class="filter-btn px-5 py-2 rounded-full border border-brand-hairline text-sm font-medium transition-all duration-200 hover:border-brand-gold">Completed</button>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-sm text-gray-400">Location:</span>
+                    <select id="city-filter" class="border border-brand-hairline rounded-full px-4 py-2 text-sm focus:outline-none focus:border-brand-gold">
+                        <option value="">All Cities</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Thane">Thane</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Properties Grid (rendered dynamically from the backend API, see js/properties.js) -->
+        <section id="properties-grid" class="py-20 bg-brand-light">
+            <div class="max-w-7xl mx-auto px-6">
+
+                <!-- Featured Property -->
+                <div id="featured-property"></div>
+
+                <!-- Loading state -->
+                <div id="properties-loading" class="text-center py-16 text-gray-400">
+                    <i class="fa-solid fa-spinner fa-spin mr-2"></i>Loading properties…
+                </div>
+
+                <!-- Empty state -->
+                <div id="properties-empty" class="hidden text-center py-16 text-gray-400">
+                    No properties match your filters. Try a different category or city.
+                </div>
+
+                <!-- Properties Grid -->
+                <div id="properties-cards" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+                <!-- Load More -->
+                <div class="text-center mt-16">
+                    <button id="load-more-btn" class="hidden border border-brand-dark px-12 py-4 rounded-full text-sm font-medium hover:bg-brand-dark hover:text-white transition-all duration-300">Load More Properties</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Strip -->
+        <section id="properties-cta" class="bg-brand-ink text-white py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <span class="text-xs tracking-[0.4em] uppercase text-brand-gold mb-4 block">Personalised Guidance</span>
+                <h2 class="font-display text-5xl font-bold mb-6">Not Sure Where to Start?</h2>
+                <p class="text-gray-400 text-lg mb-10">Our property advisors will help you find the perfect home tailored to your lifestyle and budget.</p>
+                <a href="contact.html" class="inline-flex items-center gap-3 bg-brand-gold text-white px-12 py-4 rounded-full font-medium hover:bg-white hover:text-brand-dark transition-all duration-300">Schedule a Consultation <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-brand-dark text-white pt-20 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-12">
+                <div class="md:w-1/3">
+                    <a href="home.html" class="font-display text-3xl font-bold tracking-tight block mb-6">SRIKRISHNA</a>
+                    <p class="text-gray-400 max-w-sm">Creating iconic spaces that inspire generations. A legacy of excellence since 1980.</p>
+                </div>
+                <div class="flex gap-16 flex-wrap">
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="properties.html" class="text-gray-400 hover:text-white transition-colors text-sm">Properties</a></li>
+                            <li><a href="developments.html" class="text-gray-400 hover:text-white transition-colors text-sm">Developments</a></li>
+                            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+                            <li><a href="sustainability.html" class="text-gray-400 hover:text-white transition-colors text-sm">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Instagram</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Facebook</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Legal</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 gap-4">
+                <p class="text-gray-500 text-sm">© 2026 SriKrishna Real Estate. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/properties.js"></script>
+</body>
+</html>

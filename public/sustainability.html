@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.FontAwesomeConfig = {
+          autoReplaceSvg: 'nest'
+        };
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainability | SriKrishna Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { brand: { dark: '#1a1a2e', light: '#fcfbf7', ink: '#0f172a', gold: '#C9A96E', hairline: '#e2e8f0', green: '#2D6A4F' } },
+                    fontFamily: { sans: ['Inter','sans-serif'], display: ['"Playfair Display"','serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        .link-underline::after { content:''; position:absolute; bottom:0; left:0; width:100%; height:1px; background-color:currentColor; transform:scaleX(0); transform-origin:left; transition:transform 0.6s cubic-bezier(0.19,1,0.22,1); }
+        .link-underline:hover::after { transform:scaleX(1); }
+        .progress-bar { height: 6px; border-radius: 99px; background: #e2e8f0; overflow: hidden; }
+        .progress-fill { height: 100%; border-radius: 99px; background: #2D6A4F; transition: width 1.2s ease; }
+    </style>
+</head>
+<body class="antialiased font-sans bg-white text-brand-dark overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header id="header" class="fixed top-0 left-0 w-full z-[100] px-6 py-4 flex justify-between items-center bg-white/90 backdrop-blur-md border-b border-brand-hairline">
+        <div class="flex items-center gap-12">
+            <a href="home.html" class="font-display text-2xl font-bold tracking-tight text-brand-dark">SRIKRISHNA</a>
+            <nav class="hidden lg:flex items-center gap-8">
+                <a href="properties.html" class="relative link-underline text-sm font-medium">Properties</a>
+                <a href="developments.html" class="relative link-underline text-sm font-medium">Developments</a>
+                <a href="about.html" class="relative link-underline text-sm font-medium">About</a>
+                <a href="sustainability.html" class="relative text-sm font-medium text-brand-gold border-b border-brand-gold pb-0.5">Sustainability</a>
+                <a href="investors.html" class="relative link-underline text-sm font-medium">Investors</a>
+                <a href="contact.html" class="relative link-underline text-sm font-medium">Contact</a>
+            </nav>
+        </div>
+        <a href="contact.html" class="bg-brand-gold text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-brand-dark transition-colors duration-300">Enquire Now</a>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="sus-hero" class="relative h-[560px] flex items-end overflow-hidden">
+            <img class="absolute inset-0 w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_f6c5938037_1bbb663f8161fc86.png" alt="lush vertical gardens on the facade of a modern luxury residential tower, vibrant green plants casca" />
+            <div class="absolute inset-0 bg-gradient-to-t from-brand-ink via-brand-ink/30 to-transparent"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 pb-16 w-full">
+                <span class="text-xs tracking-[0.4em] uppercase text-green-400 mb-3 block">Our Commitment</span>
+                <h1 class="font-display text-6xl font-bold text-white leading-tight">Building for<br>Tomorrow</h1>
+            </div>
+        </section>
+
+        <!-- Intro -->
+        <section id="sus-intro" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <div>
+                    <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">Why It Matters</span>
+                    <h2 class="font-display text-5xl font-bold text-brand-dark mb-6">Responsible Luxury</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">At SriKrishna, we believe that the finest homes should not come at the expense of the planet. Our sustainability strategy is woven into every stage of development — from design and construction through to the long-term wellbeing of our residents and communities.</p>
+                    <p class="text-gray-600 leading-relaxed">We are committed to net-zero carbon by 2035, IGBC Platinum certification across all new projects, and measurable improvements in biodiversity, water conservation, and social impact in every city we build in.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="bg-green-50 border border-green-100 p-8 rounded-sm text-center">
+                        <i class="fa-solid fa-leaf text-4xl text-brand-green mb-4"></i>
+                        <p class="font-display text-4xl font-bold text-brand-green mb-1">30%</p>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider">Less Energy Use</p>
+                    </div>
+                    <div class="bg-green-50 border border-green-100 p-8 rounded-sm text-center">
+                        <i class="fa-solid fa-droplet text-4xl text-brand-green mb-4"></i>
+                        <p class="font-display text-4xl font-bold text-brand-green mb-1">40%</p>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider">Water Savings</p>
+                    </div>
+                    <div class="bg-green-50 border border-green-100 p-8 rounded-sm text-center">
+                        <i class="fa-solid fa-solar-panel text-4xl text-brand-green mb-4"></i>
+                        <p class="font-display text-4xl font-bold text-brand-green mb-1">5 MW</p>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider">Solar Capacity</p>
+                    </div>
+                    <div class="bg-green-50 border border-green-100 p-8 rounded-sm text-center">
+                        <i class="fa-solid fa-tree text-4xl text-brand-green mb-4"></i>
+                        <p class="font-display text-4xl font-bold text-brand-green mb-1">500K+</p>
+                        <p class="text-xs text-gray-500 uppercase tracking-wider">Trees Planted</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pillars -->
+        <section id="sus-pillars" class="py-24 bg-brand-light border-y border-brand-hairline">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">Our Framework</span>
+                    <h2 class="font-display text-5xl font-bold text-brand-dark">Four Pillars of Sustainability</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-8 rounded-sm border border-brand-hairline hover:shadow-xl transition-shadow duration-500 group">
+                        <div class="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors duration-300">
+                            <i class="fa-solid fa-bolt text-2xl text-brand-green group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3">Clean Energy</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Solar rooftops, EV charging stations, and energy-efficient building envelopes across all our developments.</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width:78%"></div></div>
+                        <p class="text-xs text-gray-400 mt-2">78% progress to 2035 target</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm border border-brand-hairline hover:shadow-xl transition-shadow duration-500 group">
+                        <div class="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors duration-300">
+                            <i class="fa-solid fa-water text-2xl text-brand-green group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3">Water Stewardship</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Rainwater harvesting, sewage treatment plants, and drip irrigation systems across all communities.</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width:65%"></div></div>
+                        <p class="text-xs text-gray-400 mt-2">65% progress to 2035 target</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm border border-brand-hairline hover:shadow-xl transition-shadow duration-500 group">
+                        <div class="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors duration-300">
+                            <i class="fa-solid fa-seedling text-2xl text-brand-green group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3">Biodiversity</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Native landscaping, pollinator gardens, and wildlife corridors embedded within every masterplan.</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width:55%"></div></div>
+                        <p class="text-xs text-gray-400 mt-2">55% progress to 2035 target</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-sm border border-brand-hairline hover:shadow-xl transition-shadow duration-500 group">
+                        <div class="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-brand-green transition-colors duration-300">
+                            <i class="fa-solid fa-people-group text-2xl text-brand-green group-hover:text-white transition-colors duration-300"></i>
+                        </div>
+                        <h3 class="font-display text-xl font-bold mb-3">Social Impact</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-6">Affordable housing, skill development, and community health programmes across our townships.</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width:82%"></div></div>
+                        <p class="text-xs text-gray-400 mt-2">82% progress to 2035 target</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Green Projects -->
+        <section id="sus-projects" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-xs tracking-[0.4em] uppercase text-gray-400 mb-4 block">Green Developments</span>
+                    <h2 class="font-display text-5xl font-bold text-brand-dark">Our Certified Projects</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-sm h-72 mb-6">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_20849a1154_6d00c77735e512d4.png" alt="IGBC platinum certified green building with solar panels, vertical gardens, and rainwater harvesting" />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-green-700 text-white text-xs px-3 py-1 rounded-full tracking-widest uppercase">IGBC Platinum</span>
+                            </div>
+                        </div>
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-2">Palava · Dombivli</p>
+                        <h3 class="font-display text-2xl font-bold mb-2">Palava Smart City</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">India's greenest planned city with 60% open green spaces, integrated waste management, and 5 MW of solar capacity.</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-sm h-72 mb-6">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_345229816a_cb059dda12ca15a2.png" alt="luxury residential tower with extensive rooftop garden and green terrace, eco-friendly architecture " />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-green-700 text-white text-xs px-3 py-1 rounded-full tracking-widest uppercase">IGBC Gold</span>
+                            </div>
+                        </div>
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-2">Thane · Majiwada</p>
+                        <h3 class="font-display text-2xl font-bold mb-2">Greenwood Heights</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">Certified gold for its sky gardens, rainwater harvesting system delivering 40% water savings, and EV-ready parking.</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div class="relative overflow-hidden rounded-sm h-72 mb-6">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_ab1e576d98_ad4419341143bfc9.png" alt="sustainable commercial office building with green roof and solar panels, London UK, environmentally " />
+                            <div class="absolute top-4 left-4">
+                                <span class="bg-green-700 text-white text-xs px-3 py-1 rounded-full tracking-widest uppercase">BREEAM Excellent</span>
+                            </div>
+                        </div>
+                        <p class="text-xs tracking-widest uppercase text-gray-400 mb-2">London · Holborn</p>
+                        <h3 class="font-display text-2xl font-bold mb-2">Lincoln Square</h3>
+                        <p class="text-gray-500 text-sm leading-relaxed">BREEAM Excellent rated for its low-carbon construction, heat-pump heating, and sustainable drainage systems.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CSR Banner -->
+        <section id="sus-csr" class="relative py-28 overflow-hidden">
+            <img class="absolute inset-0 w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_e2e3311520_e6ba6e3888b5f349.png" alt="children at a community learning centre in India, warm sunlight, hopeful and positive, social impact" />
+            <div class="absolute inset-0 bg-brand-green/80"></div>
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+                <span class="text-xs tracking-[0.4em] uppercase text-green-200 mb-4 block">SriKrishna Foundation</span>
+                <h2 class="font-display text-5xl font-bold mb-6">Beyond Buildings</h2>
+                <p class="text-green-100 text-lg leading-relaxed mb-10">Through the SriKrishna Foundation, we invest in education, healthcare, and livelihoods for communities across the cities we build in — because we believe great developments uplift the whole city, not just its residents.</p>
+                <a href="about.html" class="inline-flex items-center gap-3 bg-white text-brand-green px-12 py-4 rounded-full font-bold hover:bg-brand-gold hover:text-white transition-all duration-300">Learn About Our Foundation <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Goals 2035 -->
+        <section id="sus-goals" class="py-24 bg-brand-ink text-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <span class="text-xs tracking-[0.4em] uppercase text-green-400 mb-4 block">Looking Ahead</span>
+                    <h2 class="font-display text-5xl font-bold">Our 2035 Commitments</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="border border-white/10 p-10 rounded-sm hover:border-brand-gold transition-colors duration-300">
+                        <i class="fa-solid fa-fire-flame-simple text-3xl text-brand-gold mb-6"></i>
+                        <h3 class="font-display text-2xl font-bold mb-4">Net Zero Carbon</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Achieve net-zero carbon across all operations and construction by 2035, reducing Scope 1, 2 and 3 emissions by 50% by 2030.</p>
+                    </div>
+                    <div class="border border-white/10 p-10 rounded-sm hover:border-brand-gold transition-colors duration-300">
+                        <i class="fa-solid fa-recycle text-3xl text-brand-gold mb-6"></i>
+                        <h3 class="font-display text-2xl font-bold mb-4">Zero Waste to Landfill</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Divert 100% of construction waste from landfill through reuse, recycling, and circular economy partnerships across all projects.</p>
+                    </div>
+                    <div class="border border-white/10 p-10 rounded-sm hover:border-brand-gold transition-colors duration-300">
+                        <i class="fa-solid fa-globe text-3xl text-brand-gold mb-6"></i>
+                        <h3 class="font-display text-2xl font-bold mb-4">Nature Positive</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Plant 1 million trees, restore native habitats, and deliver a net gain in biodiversity across every new development by 2035.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-brand-dark text-white pt-20 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-12">
+                <div class="md:w-1/3">
+                    <a href="home.html" class="font-display text-3xl font-bold tracking-tight block mb-6">SRIKRISHNA</a>
+                    <p class="text-gray-400 max-w-sm">Creating iconic spaces that inspire generations. A legacy of excellence since 1980.</p>
+                </div>
+                <div class="flex gap-16 flex-wrap">
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="properties.html" class="text-gray-400 hover:text-white transition-colors text-sm">Properties</a></li>
+                            <li><a href="developments.html" class="text-gray-400 hover:text-white transition-colors text-sm">Developments</a></li>
+                            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About Us</a></li>
+                            <li><a href="sustainability.html" class="text-gray-400 hover:text-white transition-colors text-sm">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase tracking-wider text-xs mb-6">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Instagram</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Facebook</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 gap-4">
+                <p class="text-gray-500 text-sm">© 2026 SriKrishna Real Estate. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
